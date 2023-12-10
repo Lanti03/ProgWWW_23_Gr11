@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kurse Online</title>
     <link rel="stylesheet" href="../style/style.css">
 </head>
+
 <body>
+    <div id="navbar-placeholder"></div>
+    <script>
+        // Use JavaScript to fetch and include the navbar content
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            });
+    </script>
+
     <h1>Nothing</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis a ducimus,
+         modi iste ea voluptatibus dicta, voluptatem dolorum nemo sapiente quisquam.
+         Suscipit exercitationem error eos obcaecati perferendis, dolor aspernatur ex.</p>
     <button class="genericButtonClass" id="btn">Click</button>
 </body>
+
 </html>
