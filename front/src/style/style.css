@@ -1,17 +1,17 @@
 /*background color: #0b0b0d */
 /*element color: 2d2d2d */
-/*focus color: #1f51ff */
-/*text color: #c9c9c9 */
+/*focus color: #47c5ff */
+/*text color: #FFF */
 
 body {
     padding-top: 2rem;
     background-color: #0b0b0d;
-    color: #c9c9c9
+    color: #FFF
 }
 
 .genericButtonClass {
     background-color: #2d2d2d;
-    color: #c9c9c9;
+    color: #FFF;
     border: 1px solid #000000;
     border-radius: 8px;
     box-shadow: none;
@@ -22,10 +22,10 @@ body {
 }
 
 .genericButtonClass:hover {
-    border: 2px solid #1f51ff;
+    border: 2px solid #47c5ff;
     background-color: #0b0b0d;
     /* On hover button takes background color */
-    color: #1f51ff;
+    color: #47c5ff;
     /* On hover button takes text color */
 }
 
@@ -42,6 +42,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 100;
 }
 
 nav ul {
@@ -58,7 +59,12 @@ nav ul {
 
 nav ul li:first-child {
     margin-right: auto;
+    margin-left: 1rem;
     max-height: 2rem;
+}
+
+#navBarTitle {
+    color: #1f51ff;
 }
 
 nav ul li {
@@ -75,7 +81,7 @@ nav ul li:hover {
 }
 
 nav a {
-    color: #c9c9c9;
+    color: #FFF;
     text-decoration: none;
     padding: 14px 16px;
 }
@@ -86,7 +92,7 @@ nav a {
 
 #profileCard {
     background-color: #2d2d2d;
-    color: #c9c9c9;
+    color: #FFF;
     border: 1px solid #000000;
     border-radius: 8px;
     box-shadow: none;
@@ -103,7 +109,47 @@ nav a {
 .course-conatiner {
     width: 100%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    
 }
+
+.subscribeToPremiumPanel { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+
+
+.subscribeToPremiumPanel h1 {
+    color: #47c5ff;
+    font-size: 80px;
+    margin-bottom: 20px;
+    text-wrap: wrap;
+    text-align: center;
+}
+
+.subscribeToPremiumPanel p {
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #47c5ff;
+    margin-bottom: 20px;
+    text-wrap: wrap;
+    text-align: center;
+}
+
+.subscribeToPremiumPanel img {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
 
 
 body {
@@ -114,18 +160,22 @@ body {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
+    justify-content: center;
 
     padding: 50px 0;
 }
 
 .course {
-    /* flex-basis: calc(33.33333% - 30px); */
-
     margin: 0 15px 30px;
 
     overflow: hidden;
 
     border-radius: 28px;
+}
+
+.course-box a {
+    text-decoration: none;
+    flex-direction: column;
 }
 
 .courseLink {
@@ -140,7 +190,7 @@ body {
 }
 
 .courseLink:hover,
-.courseLink:hover .info-item-focus {
+.courseLink:hover .infoItem-focus {
     text-decoration: none;
     color: #FFF;
 }
@@ -154,6 +204,7 @@ body {
 .courseTitle {
     min-height: 87px;
     margin: 0 0 25px;
+    width: 40vw;
 
     overflow: hidden;
 
@@ -172,7 +223,7 @@ body {
 
 }
 
-.info-item {
+.infoItem {
     font-size: 18px;
     color: #FFF;
     z-index: 2;
@@ -181,9 +232,9 @@ body {
     /* padding-left: 6rem; */
 }
 
-.info-item-focus {
+.infoItem-focus {
     font-weight: bold;
-    color: #f9b234;
+    color: #47c5ff;
 
     -webkit-transition: color .5s ease;
     -o-transition: color .5s ease;
@@ -192,8 +243,8 @@ body {
 
 .courseBackGround {
     height: 128px;
-    width: 128px;
-    background-color: #f9b234;
+    width: 200px;
+    background-color: #5d05f5;
 
     z-index: 1;
     position: absolute;
@@ -208,19 +259,19 @@ body {
 }
 
 .course:nth-child(2n) .courseBackGround {
-    background-color: #3ecd5e;
+    background-color: #7223fa;
 }
 
 .course:nth-child(3n) .courseBackGround {
-    background-color: #e44002;
+    background-color: #9152ff;
 }
 
 .course:nth-child(4n) .courseBackGround {
-    background-color: #952aff;
+    background-color: #b58aff;
 }
 
 .course:nth-child(5n) .courseBackGround {
-    background-color: #cd3e94;
+    background-color: #d1b8fc;
 }
 
 .course:nth-child(6n) .courseBackGround {
@@ -230,10 +281,6 @@ body {
 
 
 @media only screen and (max-width: 979px) {
-    .course {
-        -ms-flex-preferred-size: calc(50% - 30px);
-        flex-basis: calc(50% - 30px);
-    }
 
     .courseTitle {
         font-size: 24px;
@@ -241,8 +288,11 @@ body {
 }
 
 @media only screen and (max-width: 767px) {
-    .ag-format-container {
+    .course-conatiner {
         width: 96%;
+    }
+    .subscribeToPremiumPanel{
+        display: none;
     }
 
 }
@@ -264,7 +314,9 @@ body {
         padding: 22px 40px;
     }
 
-    .info-item-focus {
+    .infoItem-focus {
         font-size: 16px;
     }
+
+
 }
