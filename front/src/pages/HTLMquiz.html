@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML quiz</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <script src="../script/navbar.js"></script>
+    <script src="../script/HTMLquiz.js"></script>
+    <div id="htmlQuiz">
+        <form name="htmlQuizForm" onsubmit="return checkAnswers()">
+            <div class="question">
+                <p> <span id="questionNumber">1. </span>What does HTML stand for?</p>
+                <div class="answers">
+                    <input type="radio" name="q1" value="a" id="q1a">
+                    <label for="q1a">Hyper Text Markup Language</label>
+                    <br>
+                    <input type="radio" name="q1" value="b" id="q1b">
+                    <label for="q1b">Hyperlinks and Text Markup Language</label>
+                    <br>
+                    <input type="radio" name="q1" value="c" id="q1c">
+                    <label for="q1c">Home Tool Markup Language</label>
+                    <br>
+                    <input type="radio" name="q1" value="d" id="q1d">
+                    <label for="q1d">Hyper Text Markup Leveler</label>
+                </div>
+                <div class="correctAnswer" id="correct1"> <img src="../../content/svg/check.svg" height="30rem"> <p>Correct</p></div>
+            </div>
+            <div class="question">
+                <p> <span id="questionNumber">2. </span>What tag is used for the biggest header in html?</p>
+                <div class="answers">
+                    <input class="textQuestion" type="textfield" name="q2" value="" id="q2">
+                </div>
+                <div class="correctAnswer" id="correct2"> <img src="../../content/svg/check.svg" height="30rem"> <p>Correct</p></div>
+            </div>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    
+</body>
+</html>
