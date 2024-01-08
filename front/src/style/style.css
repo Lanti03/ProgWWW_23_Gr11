@@ -18,15 +18,15 @@ body {
     padding: 10px 20px;
     font-size: 16px;
     text-align: center;
-    display: inline-block;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .genericButtonClass:hover {
     border: 2px solid #47c5ff;
     background-color: #0b0b0d;
-    /* On hover button takes background color */
     color: #47c5ff;
-    /* On hover button takes text color */
 }
 
 
@@ -322,7 +322,11 @@ body {
 }
 
 /* --- HTML QUIZ --- */
-
+form input[type="submit"] {
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+}
 #htmlQuiz {
     display: flex;
     flex-direction: column;
@@ -344,7 +348,7 @@ body {
 }
 
 .correctAnswer {
-    display: flex;
+    display: none;
     color: #47c5ff;
     font-size: 2rem;
     margin-bottom: 20px;
