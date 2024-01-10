@@ -294,3 +294,12 @@ nav a {
     transition: 0.3s;
     text-align: left;
 }
+
+@media only screen and (max-width: 1200px) {
+    .slide {
+        display: none;
+    }
+    .main{
+        margin-left: 1%;
+    }
+}
