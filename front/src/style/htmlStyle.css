@@ -143,6 +143,7 @@ nav>ul li:first-child {
 #navBarTitle {
     color: #1f51ff;
     font-size: 2rem;
+    white-space: nowrap; 
 }
 
 nav ul li {
