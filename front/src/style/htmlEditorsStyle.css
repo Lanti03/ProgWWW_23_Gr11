@@ -46,13 +46,7 @@ body {
     background: #1b9bff;
     transition: .5s;
 }
-.slide a.clicked{
-    background: #0f71fa;
-    transition: .5s;
-}
-.active {
-    background-color: red;
-}
+
 
 div {
     border-radius: 25px;
