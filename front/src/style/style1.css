@@ -194,7 +194,7 @@ section{
     z-index: 100;
 }
 
-nav ul {
+#mainNavBar ul {
     border-radius: 0;
     list-style: none;
     padding: 0;
@@ -206,7 +206,7 @@ nav ul {
 }
 
 
-nav ul li:first-child {
+#mainNavBar ul li:first-child {
     margin-right: auto;
     margin-left: 1rem;
 }
@@ -214,21 +214,22 @@ nav ul li:first-child {
 #navBarTitle {
     color: #1f51ff;
     font-size: 2rem;
+    white-space: nowrap; 
 }
 
-nav ul li {
+#mainNavBar ul li {
     border-radius: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-nav ul li:hover:not(:first-child) {
+#mainNavBar ul li:hover:not(:first-child) {
     background-color: #1b1b1d;
     transition: 0.3s;
 }
 
-nav a {
+#mainNavBar a {
     color: #FFF;
     text-decoration: none;
     padding: 14px 16px;
@@ -306,7 +307,7 @@ nav a {
     z-index: 100;
 }
 
-nav ul {
+#mainNavBar ul {
     border-radius: 0;
     list-style: none;
     padding: 0;
@@ -318,7 +319,7 @@ nav ul {
 }
 
 
-nav>ul li:first-child {
+#mainNavBar>ul li:first-child {
     margin-right: auto;
     margin-left: 1rem;
 }
@@ -328,19 +329,19 @@ nav>ul li:first-child {
     font-size: 2rem;
 }
 
-nav ul li {
+#mainNavBar ul li {
     border-radius: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-nav>ul li:hover:not(:first-child) {
+#mainNavBar>ul li:hover:not(:first-child) {
     background-color: #1b1b1d;
     transition: 0.3s;
 }
 
-nav a {
+#mainNavBar a {
     color: #FFF;
     text-decoration: none;
     padding: 14px 16px;
