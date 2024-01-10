@@ -17,7 +17,8 @@ body{
 
 .wrapper{
     position: relative;
-    width:750px;
+    /* width:41%; */
+    width: 750px;
     height: 450px;
     background: transparent;
     border: 2px solid #0ef;
@@ -70,17 +71,18 @@ body{
     filter: blur(0);
     transition-delay: 1.9s;
 }
-
+/* 
 .wrapper .form-box.register .animation{
     transform: translateX(120%);
-}
+} */
 
 .wrapper .form-box.login{
-    left: 0;
+     left: 0; /* Pjesa qe shfaqet tek logini */
     padding: 0 60px 0 40px ;
     /* display: none; */
 }
 
+/* Animacioni qe shfaq loginin */
 .wrapper .form-box.login .animation{
     transform: translateX(0);
     transition: .7s ease;
@@ -93,12 +95,12 @@ body{
     filter: blur(10px);
     transition-delay: .5s;
 }
-
+/* 
 .wrapper .form-box.register .animation{
     transform: translateX(120%);
 
 }
-
+ */
 
 .form-box h2{
     font-size: 32px;
@@ -307,6 +309,7 @@ body{
 .wrapper.active .bg-animate2{
     transform: rotate(-11deg) skewY(-41deg);
     transition-delay: 1.2s;
+
 }
 
 .log{
@@ -314,4 +317,53 @@ body{
     top: 0;
     background-color: red;
     font-size: 60px;
+}
+
+
+@media (max-width: 850px) {
+    .wrapper.loging-active {
+        position: relative;
+        padding: 1%;
+        width: 100%;
+    }
+
+    #main {
+        margin: 2%;
+        box-sizing: border-box;
+        margin-top: 20%;
+    }
+
+    .wrapper.loging-active .form-box{
+        position: relative; /* Change from absolute to relative */
+        width: 100%;
+    }
+    
+    .wrapper.loging-active .info-text {
+        display: none;
+    }
+    .input-box {
+        width: 100%; /* Ensure the input boxes take the full width */
+    }
+    .register-link{
+        width: 100%;
+    }
+    
+   .wrapper .form-box.register{
+    display: none;
+    left: 0;
+    padding: 0 40px 0 60px ;
+}
+.wrapper.active .form-box.login {
+   display: none;
+}
+.wrapper.active .form-box.register{
+    display: block;
+    left: 0;
+    padding: 0 40px 0 60px ;
+}
+
+.bg-animate{
+    display: none;
+}
+ 
 }
