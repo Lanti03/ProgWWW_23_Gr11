@@ -105,3 +105,103 @@ p{
 ul{
     padding-left:2% ;
 }
+
+/* --- NAVBAR STYLE --- */
+
+#mainNavBar {
+    height: 75px;
+    max-height: 75px;
+    background-color: #0b0b0d;
+    box-shadow: none;
+    text-align: center;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+nav ul {
+    border-radius: 0;
+    list-style: none;
+    padding: 0;
+    margin: -1;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+
+nav>ul li:first-child {
+    margin-right: auto;
+    margin-left: 1rem;
+}
+
+#navBarTitle {
+    color: #1f51ff;
+    font-size: 2rem;
+}
+
+nav ul li {
+    border-radius: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav>ul li:hover:not(:first-child) {
+    background-color: #1b1b1d;
+    transition: 0.3s;
+}
+
+nav a {
+    color: #FFF;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+.navBarImg {
+    margin-top: 0px;
+    height: 2rem;
+    margin-right: 2rem;
+}
+
+#profileCard {
+    background-color: #121212;
+    color: #FFF;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    font-size: 16px;
+    display: none;
+    flex-direction: column;
+    width: 150px;
+    position: absolute;
+    top: 75px;
+    right:30px;
+}
+
+.pop-up-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.pop-up{
+    border-radius: 20%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.pop-up:hover {
+    background-color: #1f51ff;
+    transition: 0.3s;
+    text-align: left;
+}
