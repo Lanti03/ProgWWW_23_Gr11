@@ -10,6 +10,7 @@ document.write(`
 
     <div id="profileCard">
     <ul class="pop-up-options">
+        <li><a href="../pages/aboutus.html" class="pop-up">About Us</a></li>
         <li><a href="mailto:ard.ituad@gmail.com" class="pop-up">Email Support</a></li>
         <li><a href="../pages/index.html" class="pop-up">Logout</a></li>
     </ul>
