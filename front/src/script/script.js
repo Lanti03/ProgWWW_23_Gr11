@@ -153,7 +153,7 @@ let isValid = validatte(username,password)
 
 if(isValid){
 
-window.location.href = "login.html"
+window.location.href = "courses.html"
 var n = document.getElementById("after")
     n.style.background = "red"
 console.log(n)
