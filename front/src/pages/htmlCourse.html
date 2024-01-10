@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/htmlEditorsStyle.css">
     <title>Document</title>
+
 </head>
 <body>
+    <script src="../script/navbar.js"></script>
     
     <!-- <div class="main">
        
@@ -26,19 +28,37 @@
        
         <ul>    
             <li><h2>HTML Tutorial</h2></li>
-            <li><a href="#">HTML Introduction</a></li>
-            <li><a href="#">HTML Editors</a></li>
-            <li><a href="#">HTML Elements</a></li>
-            <li><a href="#">HTML Attributes</a></li>
-            <li><a href="#">HTML Headings</a></li>
-            <li><a href="#">HTML paragraphs</a></li>
+            <li><a href="#" class="noCourse" onmousedown="handleMouseDown(this)" onmouseup="handleMouseUp(this)">HTML Headings</a></li>
+
+            <li><a href="#tutorial" id="tutorial1" onmousedown="handleMouseDown(this.id)" onmouseup="handleMouseUp(this)">HTML Home</a></li>
+            <li><a href="#basic" onmousedown="handleMouseDown(this)" onmouseup="handleMouseUp(this)">HTML Basic</a></li>
+            <li><a href="#attribute" onmousedown="handleMouseDown(this)" onmouseup="handleMouseUp(this)">HTML Attributes</a></li>
+            <li><a href="#" class="noCourse" onclick="noCourse()"  onmousedown="handleMouseDown(this)" onmouseup="handleMouseUp(this)">HTML Headings</a></li>
+            <li><a href="#" onclick="noCourse()" onmousedown="handleMouseDown(this)" onmouseup="handleMouseUp(this)">HTML Paragraphs</a></li>
+            <li><a href="#" onclick="noCourse()" onmousedown="handleMouseDown(this)" onmouseup="handleMouseUp(this)">HTML Styles</a></li>
+            <li><a href="#" onclick="noCourse()">HTML Formating</a></li>
+            <li><a href="#" onclick="noCourse()">HTML Quotations</a></li>
+            <li><a href="#" onclick="noCourse()">HTML Formating</a></li>
+            <li><a href="#" onclick="noCourse()">HTML Comments</a></li>
+            <li><a href="#" onclick="noCourse()">HTML Colors</a></li>
+            <li><a href="#" onclick="noCourse()">HTML Css</a></li>
+            <li><a href="#" onclick="noCourse()">HTML Page Titles</a></li>
+            <li><a href="#" onclick="noCourse()">HTML Tables</a></li>
+            <li><a href="#" onclick="noCourse()">HTML Lists</a></li>
+            <li><a href="#" onclick="noCourse()">HTML Div</a></li>
+            <li><a href="#" onclick="noCourse()">HTML Classes</a></li>
+            <li><a href="#" onclick="noCourse()">HTML Layout</a></li>
+            <li><a href="#" onclick="noCourse()">HTML Forms</a></li>
+            <li><a href="#" onclick="noCourse()">HTML Media</a></li>
+
+
             
         </ul>
        
     </div>
 
     <div class="main">
-        <h1 id="content">HTML Tutorial</h1>
+        <h1  id="tutorial">HTML Tutorial</h1>
     
         <div class="important">
             <div class="paragraphs">
@@ -82,31 +102,245 @@
                 <button>Submit Answer</button>
             </div>
         </div>
-<!-- 
-     <div class="attribute">
-        <h1 class="exercise-indicate">HTML Attributes</h1>
-        <hr>
+        <div class="quizz">
+            <a href="HTLMquiz.html">Start HTML Quiz</a>
+        </div>
+        <hr class="end-section">
+        <h1  id="basic">HTML Basic Examples</h1><hr>
+        <p>In this chapter we will show some basic HTML examples.</p>
+        <p>Don't worry if we use tags you have not learned about yet.</p><hr>
+        <h3>HTML Documents</h3>
+        <p>All HTML documents must start with a document type declaration: <span>&lt;!DOCTYPE html&gt;</span>.</p> 
+        <p>The HTML document itself begins with <span>&lt;html&&gt;</span> and ends with <span>&lt;html&&gt;</span>.</p>
+        <p>The visible part of the HTML document is between <span>&lt;body&gt;</span> and <span>&lt;body&gt;</span>. </p>
+        <div class="example">
+            <h3 id="example">Example</h3>
+            <div class="example-show">
+                <div class="code">
+                    <code>
+                        &lt;!DOCTYPE <span>html</span>&gt;<br>
+                        &lt;html&gt;<br>
+                        &lt;body&gt;<br>
+                        &lt;h1&gt;This is a Heading&lt;/h1&gt;<br>
+                        &lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
+                        &lt;/body&gt;<br>
+                        &lt;/html&gt;<br>
+                    </code>
+                </div>
+            </div>
+         </div>
+        <h3>The &lt;!DOCTYPE>&gt; Declaration</h3>
+         <p>The <span>&lt;!DOCTYPE>&gt;</span> declaration represents the document type, and helps browsers to display web pages correctly.</p>
+         <p>It must only appear once, at the top of the page (before any HTML tags).</p>
+         <p>The <span>&lt;!DOCTYPE>&gt;</span> declaration is not case sensitive. </p>
+         <p>The <span>&lt;!DOCTYPE>&gt;</span> declaration for HTML5 is: </p>
+         <div class="example">
+            <h3 id="example">Example</h3>
+            <div class="example-show">
+                <div class="code">
+                    <code>
+                        &lt;!DOCTYPE <span>html</span>&gt;<br>
+                    </code>
+                </div>
+            </div>
+         </div><hr>
+         <h3>HTML Headings</h3>
+         <p>HTML headings are defined with the  <span>&lt;h1&gt;</span> to  <span>&lt;h6&gt;</span> tags. </p>
+         <p><span>&lt;h1&gt;</span> defines the most important heading. <span>&lt;h6&gt;</span> defines the least important heading:  </p>
+         <div class="example">
+            <h3 id="example">Example</h3>
+            <div class="example-show">
+                <div class="code">
+                    <code>
+                        <span> &lt;h1&gt;</span>This is heading 1<span> &lt;/h1&gt;</span><br>
+                        <span> &lt;h2&gt;</span>This is heading 2<span> &lt;/h2&gt;</span><br>
+                        <span> &lt;h3&gt;</span>This is heading 3<span> &lt;/h3&gt;</span><br>
+
+                    </code>
+                </div>
+            </div>
+         </div>
+         <h3>HTML Paragraphs</h3>
+         <p>HTML paragraphs are defined with the <span> &lt;p&gt;</span> tag:</p>
+         <div class="example">
+            <h3 id="example">Example</h3>
+            <div class="example-show">
+                <div class="code">
+                    <code>
+                        <span> &lt;p&gt;</span>This is a paragraph.<span>&lt;/p&gt;</span><br>
+                        <span> &lt;p&gt;</span>This is another paragraph.<span>&lt;/p&gt;</span><br>
+                    </code>
+                </div>
+            </div>
+         </div
+         ><hr>
+         <h3>HTML Links</h3>
+         <p>HTML links are defined with the <span> &lt;a&gt;</span> tag:</p>
+         <div class="example">
+         <h3 id="example">Example</h3>
+         <div class="example-show">
+             <div class="code">
+                 <code>
+                    <span> &lt;a&gt;</span> href="https://www.w3schools.com"&gt;This is a link<span>&lt;/a&gt;</span>
+                </code>
+             </div>
+         </div>
+      </div>
+      <p>The link's destination is specified in the <span>href</span> attribute. </p>
+      <p>Attributes are used to provide additional information about HTML elements.</p>
+      <p>You will learn more about attributes in a later chapter.</p><hr>
+      <h3>HTML Exercises</h3>
+      <div class="exercise">
+        <h3>Test Yourself With Exercises </h3>
+        <div class="exercise-description">
+            <h3>Exercise</h3>
+            <p>HTML elements are surrounded by a specific type of brackets, which one?</p>
+            <div class="exercise-show">
+                <span id="square"></span>p<span id="square"></span>This is a paragrph <span id="square"></span>/p<span id="square"></span>
+            </div>
+            <button>Submit Answer</button>
+        </div>
+    </div>
     
+    <div class="quizz">
+        <a href="HTLMquiz.html">Start HTML Quiz</a>
+    </div>
+    <hr class="end-section">
+
+
+    <h1 id="attribute">HTML Attributes</h1>
+    <hr>
         <p>HTML attributes provide additional information about HTML elements.</p>
         <hr>
-        <h1>HTML Attributes</h1>
-        <ul>
-            <li>All HTML elements can have attributes</li>
-            <li>Attributes provide additional information about elements </li>
-            <li>Attributes are always specified in the start tag</li>
-            <li>Attributes usually come in name/value pairs like: name="value"</li>
+        <h2>HTML Attributes</h2>
+        <ul class="list">
+           <li>All HTML elements can have attributes</li>
+          <li>Attributes provide additional information about elements </li>
+          <li>Attributes are always specified in the start tag</li>
+          <li>Attributes usually come in name/value pairs like: name="value"</li>
         </ul>
-        <hr>
-        <h1>The href Attribute</h1>
-        <p>The <a> tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to: </p>
-            <div class="exercise">
-            <h2 class="test">Example</h2>
-            <div class="do">
-            <p>a href="https://www.w3schools.com">Visit W3Schools /a></p>
+    <hr>
+        <h3>The href Attribute</h3>
+        <p>The  tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to: </p>
+        <div class="example">
+            <h3 id="example">Example</h3>
+            <div class="example-show">
+                <div class="code">
+                    <code>
+                        &lt;p ="About W3Schools"&gt;W3Schools is a web developer's site.&lt;/p&gt;
+                    </code>
+                </div>
+            </div>     
+
+        </div>
+        <p>You will learn more about links in our HTML Links chapter.</p>
+        <h3>The src Attribute</h3>
+        <p>The <img> tag is used to embed an image in an HTML page. The src attribute specifies the path to the image to be displayed:</p>
+        <div class="example">
+            <h3 id="example">Example</h3>
+            <div class="example-show">
+                <div class="code">
+                    <code>
+                        &lt;img src="img_girl.jpg"&gt;
+                    </code>
+                </div>
+            </div>     
+
+        </div>
+        <p>There are two ways to specify the URL in the src attribute:</p>
+        <p><span>1. Absolute URL </span>- Links to an external image that is hosted on another website. Example: src="https://www.w3schools.com/images/img_girl.jpg".</p>
+        <p><span>Notes:</span> External images might be under copyright. If you do not get permission to use it, you may be in violation of copyright laws. In addition, you cannot control external images; it can suddenly be removed or changed.</p>
+        <p><span>2. Relative URL</span> - Links to an image that is hosted within the website. Here, the URL does not include the domain name. If the URL begins without a slash, it will be relative to the current page. Example: src="img_girl.jpg". If the URL begins with a slash, it will be relative to the domain. Example: src="/images/img_girl.jpg".</p>
+        <p><span>Tip: </span> is almost always best to use relative URLs. They will not break if you change domain</p>
+    <hr>
+         <h3>The width and height Attributes</h3>    
+         <p>The <img> tag should also contain the width and height attributes, which specify the width and height of the image (in pixels):</p>
+        <div class="example">
+            <h3 id="example">Example</h3>
+            <div class="example-show">
+                <div class="code">
+                    <code>
+                        &lt;img src="img_girl.jpg" width="500" height="600"&gt;
+                    </code>
+                </div>
+            </div>     
+
+        </div>
+    <hr>
+            <h3>The alt Attribute</h3>
+            <p>The required alt attribute for the <img> tag specifies an alternate text for an image, if the image for some reason cannot be displayed. This can be due to a slow connection, or an error in the src attribute, or if the user uses a screen reader.</p>
+            <div class="example">
+                <h3 id="example">Example</h3>
+                <div class="example-show">
+                    <div class="code">
+                        <code>
+                            &lt;img src="img_girl.jpg" alt="Girl with a jacket&gt;
+                        </code>
+                    </div>
+                </div>     
+
             </div>
+
+            <h3>The lang Attribute</h3>
+            <p>You should always include the lang attribute inside the <html> tag, to declare the language of the Web page. This is meant to assist search engines and browsers.</p>
+
+            <p> The following example specifies English as the language:</p>
+            <div class="example">
+                <h3 id="example" >Example</h3>
+                <div class="example-show" >
+                    <div class="code">
+                        <code>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="en"&gt;<br>
+                            &lt;body&gt;<br>
+                                ... <br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </code>
+                    </div>
+                </div>
+            </div>
+            <p>Country codes can also be added to the language code in the lang attribute. So, the first two characters define the language of the HTML page, and the last two characters define the country</p>
+            <p>The following example specifies English as the language and United States as the country:</p>
+            <div class="example">
+                <h3 id="example" >Example</h3>
+                <div class="example-show" >
+                    <div class="code">
+                        <code>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="en-US&gt;<br>
+                            &lt;body&gt;<br>
+                                ... <br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;
+                        </code>
+                    </div>
+                </div>
+            </div>
+            <p>You can see all the language codes in our HTML Language Code Reference.</p><hr>
+            <h3>The title Attribute</h3>
+            <p>The title attribute defines some extra information about an element.</p>
+            <p>The value of the title attribute will be displayed as a tooltip when you mouse over the element:</p>
+            <div class="example">
+                <h3 id="example">Example</h3>
+                <div class="example-show">
+                    <div class="code">
+                        <code>
+                            &lt;p title="I'm a tooltip"&gt;This is a paragraph.&lt;/p&gt;
+                        </code>
+                    </div>
+                </div>    
+            </div>
+            <h3>We Suggest: Always Use Lowercase Attributes</h3>
+            <p>The HTML standard does not require lowercase attribute names.</p>
+            <p>The title attribute (and all other attributes) can be written with uppercase or lowercase like <san>title</san> or <span>TITLE</span></p>
+            <p>However, W3C <span>recommends</span> lowercase attributes in HTML, and <span>demands</span> lowercase attributes for stricter document types like XHTML.</p>
+            <div class="quizz">
+                <a href="HTLMquiz.html">Start HTML Quiz</a>
+            </div>
+            <hr class="end-section">
     </div>
-</div>
-</div>
-   
+    
+    <script src="../script/HtmlCourse.js"></script>
 </body>
 </html>
