@@ -47,7 +47,9 @@ body {
     transition: .5s;
 }
 
-
+.slide a.clicked{
+    background-color: #1f51ff;
+}
 div {
     border-radius: 25px;
 }
