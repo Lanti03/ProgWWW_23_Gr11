@@ -386,6 +386,28 @@ form input[type="submit"] {
     background-color: #121212;
 }
 
+.radioAnswers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.radioOption {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+form[name="htmlQuizForm"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
 #questionNumber{
     color: #47c5ff;
     font-size: 2rem;
@@ -406,6 +428,10 @@ form input[type="submit"] {
     margin: auto;
 }
 
+.longQuestion{
+    margin-left: 80px;
+    margin-right:80px;
+}
 
 
 .textQuestion {
@@ -421,6 +447,10 @@ form input[type="submit"] {
 
 input[type="textfield"] {
     border-radius: 20px;
+}
+
+#theSubmitButton {
+    margin-top: 50px;
 }
 
 @media only screen and (max-width: 500px) {
