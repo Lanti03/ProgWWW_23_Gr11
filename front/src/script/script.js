@@ -15,7 +15,7 @@ const registerLink = document.querySelector(".register-link")
 const about = document.querySelector(".about")
 const loginLink = document.querySelector(".login-link");
 const loginForm = document.getElementById("login-form")
-var person = [{ name: "admin", email: "admin@gmail.com", password: "admini" }, { name: "ardi", email: "admin@gmail.com", password: "123" }]
+var person = [{ name: "admin", email: "admin@gmail.com", password: "admin" }, { name: "ardi", email: "admin@gmail.com", password: "123" }]
 // console.log(loginForm)
 var isLabelBtnClicked = false
 var isAboutBtnClicked = false
@@ -27,9 +27,9 @@ function updateSectionVisibility() {
 
 
 const windowWidth = window.innerWidth;
-console.log(section)
+// console.log(section)
 // console.log(windowWidth);
-console.log(loginLink.checked)
+// console.log(loginLink.checked)
 if(!isLogBtnClicked){
 if (windowWidth <= 700) {
     text.style.display = "none";
@@ -59,6 +59,8 @@ if(isLogBtnClicked){
 
 if(isAboutBtnClicked && windowWidth<=1600){
     img.style.display = "none"
+    text.style.display = "none"
+
 }
 }
 
@@ -213,10 +215,9 @@ document.getElementById("register-form").reset();
 
 var anchors = document.querySelectorAll('ul a');
 
-// Add click event listeners to each anchor element
 anchors.forEach(function(anchor) {
     anchor.addEventListener('click', function() {
-        // Remove 'clicked' class from all anchors
+
         anchors.forEach(function(a) {
             a.classList.remove('clicked');
         });
@@ -232,10 +233,13 @@ anchors.forEach(function(anchor) {
 aboutBtn.addEventListener('click',()=>{
     isAboutBtnClicked =true
     wrapper.classList.remove("loging-active")
-    console.log(isLogBtnClicked)
+    btn.checked = false;
+    // console.log(isLogBtnClicked)
     btn.checked = false;
     text.style.display = "none";
-    mainImg.style.display = "none"    
+    img.style.display = "none"    
     console.log(img)
     about.classList.add("about-active")
+    updateSectionVisibility();
+
     })
