@@ -56,11 +56,21 @@ div {
 
 
 .main{
-    background-color: white;
+    /* background-color: white; */
+    background-color: #0b0b0d;
     margin: 0.5%;
-    margin-left: 15.5%;
+    margin-left: 15%;
     width: 100%;
     margin-top: 75px;
+    color: white;
+    border-radius: 0;
+    margin-right: 0;
+    padding-left:1%;
+    padding-right: 1%;
+    /* padding: 0.5%;
+    padding-left: 15.5%;
+    padding: 75px; */
+
 }
 
 h1{
@@ -70,7 +80,8 @@ h1{
 
 .important{
     width: 40%;
-    background-color: #C2D5AC;
+    /* background-color: #C2D5AC; */
+    background-color: #34c0eb;
     padding-top:0.5% ;
     padding-left:0.5% ;
 }
@@ -93,7 +104,9 @@ h2{
 
 
 .example{
-    background-color: #DEDEDE;
+    /* background-color: #DEDEDE; */
+    background-color: #a5a5a5;
+
     color: black;
     padding-bottom: 0.5%;
 
@@ -106,7 +119,7 @@ h2{
 }
 
 .example-show{
-    background-color: white;
+    background-color: #DEDEDE;
     margin: 1%;
      
 }
@@ -163,9 +176,6 @@ hr{
     margin-top: 1%;
 }
 
-span{
-    color: red;    
-}
 
 #square{
     background-color: white;
@@ -315,4 +325,8 @@ nav a {
     .main{
         margin-left: 1%;
     }
+}
+
+.slide {
+    border-radius: 0;
 }

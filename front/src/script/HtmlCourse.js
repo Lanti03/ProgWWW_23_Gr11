@@ -1,16 +1,7 @@
 
 
 
-// function handleMouseDown(link) {
-//     console.log(link)
-//     link.classList.add("active");
-// }
-
-// function handleMouseUp(link) {
-//     link.classList.remove('active');
-// }
-
-var anchors = document.querySelectorAll('ul a');
+var anchors = document.querySelectorAll('.slide ul a');
 var home = anchors[0]
 console.log(home)
 // Add click event listeners to each anchor element
@@ -26,7 +17,7 @@ console.log(home)
         // console.log(customAttributeValue)
        if(attributeValue == "#"){
         home.classList.add("clicked")
-
+        this.setAttribute('href',home.getAttribute("href"))
     }
        else{
         this.classList.add('clicked');
