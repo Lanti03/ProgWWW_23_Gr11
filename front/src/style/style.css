@@ -419,6 +419,10 @@ form input[type="submit"] {
 
 }
 
+input[type="textfield"] {
+    border-radius: 20px;
+}
+
 @media only screen and (max-width: 500px) {
     .question {
         font-size: 0.75rem;
