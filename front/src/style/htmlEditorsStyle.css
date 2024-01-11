@@ -33,8 +33,9 @@ body {
     padding: 20px;
     border:4px black solid ;
     color: white;
-
+    border-radius: 50px;
 }
+
 
 .slide li a{
     font-size: 17px;
@@ -100,7 +101,11 @@ h1{
 
 h2{
     margin:3% 0 3%  0%;
-    font-size: 2em;
+    font-size: 2em; 
+}
+
+#TutorialName {
+    margin-left:15px;
 }
 
 
@@ -326,10 +331,11 @@ nav a {
         display: none;
     }
     .main{
-        margin-left: 1%;
+        margin-left: 0;
     }
 }
 
 .slide {
     border-radius: 0;
 }
+

@@ -240,6 +240,10 @@ section {
     .photo {
         width: 200px;
     }
+
+    .desc:nth-child(even) {
+        flex-direction: column-reverse;
+    }
 }
 
 
