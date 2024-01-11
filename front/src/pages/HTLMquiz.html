@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML quiz</title>
     <link rel="stylesheet" href="../style/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </head>
 
 <body>
@@ -72,15 +73,19 @@
                 </div>
             </div>
             <div>
-                <p> <span id="questionNumber">5. </span> The input type="range" defines a control for entering a
+                <p class="longQuestion"> <span id="questionNumber">5. </span> The input type="range" defines a control for entering a
                     number whose exact value is not important</p>
 
-                <div class="answers">
-                    <input type="radio" name="q5" value="a" id="q5a">
-                    <label for="q5a">True</label>
+                <div class="radioAnswers">
+                    <div class="radioOption">
+                        <input type="radio" name="q5" value="a" id="q5a">
+                        <label for="q5a">True</label>
+                    </div>
                     <br>
-                    <input type="radio" name="q5" value="b" id="q5b">
-                    <label for="q5b">False</label>
+                    <div class="radioOption">
+                        <input type="radio" name="q5" value="b" id="q5b">
+                        <label for="q5b">False</label>
+                    </div>
                 </div>
                 <div class="correctAnswer" id="correct5"> <img src="../../content/svg/check.svg" height="30rem">
                     <p>Correct</p>
@@ -89,7 +94,7 @@
                     <p>Wrong</p>
                 </div>
             </div>
-            <input type="submit" value="Submit" class="genericButtonClass">
+            <input id="theSubmitButton" type="submit" value="Submit" class="genericButtonClass">
         </form>
     </div>
 
