@@ -6,7 +6,8 @@
 body {
     padding-top: 2rem;
     background-color: #0b0b0d;
-    color: #FFF
+    color: #FFF;
+    background-color:  #0b0b0d;  
 }
 
 .genericButtonClass {
@@ -201,12 +202,6 @@ nav a {
     margin-bottom: 20px;
 }
 
-
-
-body {
-    background-color:  #0b0b0d;
-}
-
 .course-box {
     display: flex;
     align-items: flex-start;
@@ -386,9 +381,32 @@ form input[type="submit"] {
     max-width: 50rem;
     border-radius: 3rem;
     margin: 0 auto;
+    margin-top: 90px;
     padding: 50px 0;
     background-color: #121212;
 }
+
+.radioAnswers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.radioOption {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+form[name="htmlQuizForm"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 
 #questionNumber{
     color: #47c5ff;
@@ -410,6 +428,10 @@ form input[type="submit"] {
     margin: auto;
 }
 
+.longQuestion{
+    margin-left: 80px;
+    margin-right:80px;
+}
 
 
 .textQuestion {
@@ -421,6 +443,14 @@ form input[type="submit"] {
     border-bottom: 2px solid #000; /* Adjust color as needed */
     background-color: #1b1b1d;
 
+}
+
+input[type="textfield"] {
+    border-radius: 20px;
+}
+
+#theSubmitButton {
+    margin-top: 50px;
 }
 
 @media only screen and (max-width: 500px) {
