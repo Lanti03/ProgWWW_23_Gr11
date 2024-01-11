@@ -182,8 +182,27 @@ nav a {
     overflow: hidden;
 }
 
+.authorName {
+    color:#1f51ff;
+    font-weight: 900;
+    font-size: 2em;
+}
+
 p {
     flex: 2;
     margin: 0 1em;
     color:#FFF;
+}
+
+@media only screen and (max-width: 700px) {
+    .desc {
+        flex-direction: column;
+    }
+    .photo {
+        margin: 1em 0;
+        width:200px;
+    }
+    .desc:nth-child(even) {
+        flex-direction: column-reverse;
+    }
 }
