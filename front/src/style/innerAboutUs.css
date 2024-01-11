@@ -1,7 +1,13 @@
 body {
     padding-top: 2rem;
     background-color: #0b0b0d;
-    color: #FFF
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
 .genericButtonClass {
@@ -137,13 +143,47 @@ nav a {
     text-align: left;
 }
 
-.photo{
-    width: 400px;
+/* ABOUT US PAGE */
+
+.about {
+    width: 80%;
+    max-width: 900px;
 }
 
-#lanti,#ardi {
-    width: 400px;
-    height: 400px;
-    max-width: 400px;
-    max-height: 400px;
+.desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+    margin-bottom: 2em;
+    padding: 1em;
+    background-color: #121212;
+}
+
+.photo {
+    flex: 1;
+    margin: 0 1em;
+}
+
+.photo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.photo {
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    padding: 1px;
+    /* width: 600px; 
+    height: 300px;  */
+    width: 800px;
+    height: 50%;
+    overflow: hidden;
+}
+
+p {
+    flex: 2;
+    margin: 0 1em;
+    color:#FFF;
 }
