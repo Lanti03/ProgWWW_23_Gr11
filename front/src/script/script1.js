@@ -67,7 +67,12 @@ updateSectionVisibility()
   function updateSectionVisibility() {
     const windowWidth = window.innerWidth;
     console.log(windowWidth)
-   
+    if(btn.checked  && windowWidth>1600){   //Ekzekutoet kur butoni nuk eshte aktiv
+        img.classList.remove("active");
+        text.style.display = "block";
+        img.style.display = "block"
+        btn.checked = false
+    }
 
     if(btn.checked  || isHomeBtnClicked || isLogBtnClicked || isAboutBtnClicked || windowWidth>1600){   //Ekzekutoet kur butoni nuk eshte aktiv
         console.log(btn.checked)

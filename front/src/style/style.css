@@ -90,7 +90,7 @@ nav>ul li:first-child {
 #navBarTitle {
     color: #1f51ff;
     font-size: 2rem;
-    white-space: nowrap; 
+   white-space: nowrap;   /* zin vend sa dush por mos u ban space */
 }
 
 nav ul li {

@@ -3,10 +3,10 @@
 
 var anchors = document.querySelectorAll('.slide ul a');
 var home = anchors[0]
-console.log(home)
+// console.log(anchors)
 // Add click event listeners to each anchor element
  anchors.forEach(function(anchor) {
-
+    console.log(anchor)
     anchor.addEventListener('click', function() {
        
         anchors.forEach(function(a) {

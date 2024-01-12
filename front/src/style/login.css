@@ -26,6 +26,9 @@ body{
     transform: scale(0);
 }
 
+
+
+
 .wrapper.loging-active{
     position: absolute;
     top:30%;
@@ -34,6 +37,10 @@ body{
     transition-delay: .2s;
     transition-duration: 1.5s;
 }
+
+
+
+
 
 /* Kur dritarja te jete zvogular */
 .wrapper.window{
@@ -53,6 +60,27 @@ body{
 
 }
 
+/* Animacioni qe shfaq loginin */
+.wrapper .form-box.login .animation{
+    transform: translateX(0);
+    transition: .7s ease;
+    transition-delay: .5s;
+}
+
+.wrapper.active .form-box.login .animation{
+    transform: translateX(-120%);
+    opacity: 0;
+    filter: blur(10px);
+    transition-delay: .5s;
+}
+/* 
+.wrapper .form-box.register .animation{
+    transform: translateX(120%);
+
+}
+ */
+
+ 
 .wrapper .form-box.register{
     right: 0;
     padding: 0 40px 0 60px ;
@@ -82,25 +110,6 @@ body{
     /* display: none; */
 }
 
-/* Animacioni qe shfaq loginin */
-.wrapper .form-box.login .animation{
-    transform: translateX(0);
-    transition: .7s ease;
-    transition-delay: .5s;
-}
-
-.wrapper.active .form-box.login .animation{
-    transform: translateX(-120%);
-    opacity: 0;
-    filter: blur(10px);
-    transition-delay: .5s;
-}
-/* 
-.wrapper .form-box.register .animation{
-    transform: translateX(120%);
-
-}
- */
 
 .form-box h2{
     font-size: 32px;
@@ -144,6 +153,10 @@ body{
 .input-box input:valid ~ label{
     top: -5px;
     color: #0ef;
+}
+
+.register .input-box input:invalid ~ label {
+    color: red;
 }
 
 .input-box i{
@@ -278,8 +291,9 @@ body{
     width: 850px;
     height: 600px;
     background: linear-gradient(45deg,#081b29,#0ef);
-    transform: rotate(10deg) skewY(40deg);
+    transform: rotate(10deg) skewY(40deg); 
     /* transform:  rotate(0) skewY(0); */
+    /* This line sets the origin point for the transformations. The transformations (rotation and skewing) are applied relative to this origin point. In this case, the origin is set to the bottom right corner of the element. */
     transform-origin: bottom right;
     border-bottom: 3px solid #0ef;
     transition: 1.5s ease;
